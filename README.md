@@ -384,8 +384,6 @@ E = MotionBERT.get_representation(x)
 
 ## Model Zoo
 
-<img src="https://motionbert.github.io/assets/demo.gif" alt="" style="zoom: 50%;" />
-
 | Model                           | Download Link                                                | Config                                                       | Performance      |
 | ------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------- |
 | MotionBERT (162MB)              | [OneDrive](https://1drv.ms/f/s!AvAdh0LSjEOlgS425shtVi9e5reN?e=6UeBa2) | [pretrain/MB_pretrain.yaml](configs/pretrain/MB_pretrain.yaml) | -                |
@@ -394,7 +392,7 @@ E = MotionBERT.get_representation(x)
 | 3D Pose (H36M-SH, ft)           | [OneDrive](https://1drv.ms/f/s!AvAdh0LSjEOlgSoTqtyR5Zsgi8_Z?e=rn4VJf) | [pose3d/MB_ft_h36m.yaml](configs/pose3d/MB_ft_h36m.yaml)     | 37.2mm (MPJPE)   |
 | Action Recognition (x-sub, ft)  | [OneDrive](https://1drv.ms/f/s!AvAdh0LSjEOlgTX23yT_NO7RiZz-?e=nX6w2j) | [action/MB_ft_NTU60_xsub.yaml](configs/action/MB_ft_NTU60_xsub.yaml) | 97.2% (Top1 Acc) |
 | Action Recognition (x-view, ft) | [OneDrive](https://1drv.ms/f/s!AvAdh0LSjEOlgTaNiXw2Nal-g37M?e=lSkE4T) | [action/MB_ft_NTU60_xview.yaml](configs/action/MB_ft_NTU60_xview.yaml) | 93.0% (Top1 Acc) |
-| **MA-52 Micro-Actions (custom)** | **Training in progress** | [action/MB_train_custom.yaml](configs/action/MB_train_custom.yaml) | **52-class micro-actions** |
+| **MA-52 Micro-Actions (custom)** | [Google Drive](https://drive.google.com/file/d/1A18vkSfeDkkdkDEIOY8zWB0uA44xpjZO/view?usp=drive_link) | [action/MB_train_custom.yaml](configs/action/MB_train_custom.yaml) | **42.6% (Top1) / 79.9% (Top5)** |
 | Mesh (with 3DPW, ft)            | [OneDrive](https://1drv.ms/f/s!AvAdh0LSjEOlgTmgYNslCDWMNQi9?e=WjcB1F) | [mesh/MB_ft_pw3d.yaml](configs/mesh/MB_ft_pw3d.yaml)              | 88.1mm (MPVE)    |
 
 In most use cases (especially with finetuning), `MotionBERT-Lite` gives a similar performance with lower computation overhead. 
